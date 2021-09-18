@@ -9,15 +9,34 @@
 </head>
 <body>
     <!-- <h1>Test</h1> -->
-    <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    <nav class="navbar navbar-dark bg-dark text-center">
+        <span class="navbar-brand mb-0 h1 ">Weather Dashboard</span>
     </nav>
 
+   
     <div class="container">
-        <h2 id="cityName"></h2>
-        <p id="temperature"></p>
-        <p id="humidity"></p>
-        <p id="windSpeed"></p>
+        <div class="row">
+         <div class="col-sm-4">
+            <div class="container">
+                 <form>
+                     <div class="form-group">
+                         <label for="searchCity">Search For City</label>
+                         <input type="text" class="form-control" id="searchCity">
+                     </div>
+                     <button type="submit" class="btn btn-primary" id="searchCityBtn">Submit</button>
+                 </form>
+            </div>
+             <div class="container">List</div>
+         </div>
+         <div class="col-sm-8">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+         </div>
+        </div>
+
+       
     </div>
     <script src="script.js"></script>
 </body>
